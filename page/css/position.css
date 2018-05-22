@@ -2,3 +2,17 @@
 	height: 30%;
 	position: absolute;
 }
+
+
+ul.sidenav {
+    position: fixed;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        position: relative;
+    }
+}

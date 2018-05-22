@@ -1,0 +1,18 @@
+.esconder {
+	display: none;
+}
+
+.exibir {
+	display: block;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    text-decoration: none;
+}
+ 
