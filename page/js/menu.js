@@ -7,7 +7,12 @@ function troca_tela(tela) {
 		break;
 		case 'cadastro':
 			active('cadastro');
-			document.getElementById('submenu').style.display = 'block';
+			if(document.getElementById('submenu').style.display == 'block') {
+				document.getElementById('submenu').style.display = 'none';
+			} else {
+				document.getElementById('submenu').style.display = 'block';
+			}
+			
 		break;
 	}
 }
