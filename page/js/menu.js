@@ -3,6 +3,14 @@ function troca_tela(tela) {
 		case 'inicio':
 			document.getElementById('inicio').style.display = 'block';
 			document.getElementById('conteudo').style.display = 'none';
+			if(document.getElementById('inicio').style.display == 'block') {
+				document.getElementById('submenu').style.display = 'none';
+				document.getElementById('c_aluno').className = 'none';
+				document.getElementById('c_professor').className = 'none';
+				document.getElementById('c_turma').className = 'none';
+			} else {
+				document.getElementById('submenu').style.display = 'block';
+			}
 			active('inicio');
 		break;
 		case 'cadastro':
@@ -12,10 +20,10 @@ function troca_tela(tela) {
 			} else {
 				document.getElementById('submenu').style.display = 'block';
 			}
-			
 		break;
 	}
 }
+
 function active(item_menu) {
 	switch(item_menu) {
 		case 'inicio':
@@ -29,4 +37,3 @@ function active(item_menu) {
 	}
 }
 
-document.getElementById('conteudo').innetHTML = '<?php include_once "cadastrar_aluno.php;"?>';

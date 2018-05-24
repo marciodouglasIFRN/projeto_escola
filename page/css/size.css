@@ -8,13 +8,15 @@
 	left:35%;
 }
 
+
+
 body {
 	margin: 0;
 }
 
 ul.sidenav {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     width: 25%;
     height: 100%;
 }
@@ -43,4 +45,6 @@ div.content {
     	margin-left: 0;
     }
 }
+
+
 
