@@ -10,20 +10,26 @@
 		<link rel="stylesheet" type="text/css" href="../../css/style.css">
 		<script type="text/javascript" src="../../js/menu.js"></script>
 		<script type="text/javascript" src="../../includ/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="../../js/mudar_tela.js"></script>
+		<script type="text/javascript" src="../../js/submenu.js"></script>
 	</head>
 	<body>
 		<ul class="sidenav">
-		  <li><a class="active" id="menu_inicio" onclick='troca_tela("inicio")'>Início</a></li>
+		  <li><a class="active" id="menu_inicio" onclick='troca_tela_secretaria("inicio")'>Início</a></li>
 		  
-		  <li><a id="menu_cadastro" onclick='troca_tela("cadastro")'>Cadastro</a></li>
-
-		  <div id="submenu" class="esconder">
-		  	<li><a id="c_aluno" onclick="troca_tela('c_aluno')">Aluno</a></li>
-		  	<li><a id="c_professor" onclick="troca_tela('c_professor')">Professor</a></li>
-		  	<li><a id="c_turma" onclick="troca_tela('c_turma')">Turma</a></li>
+		  <li><a id="menu_cadastro" onclick='troca_tela_secretaria("cadastro")'>Cadastro</a></li>
+		  <div id="submenu_cadastro" class="esconder">
+		  	<li><a id="c_aluno" onclick="troca_tela_secretaria('c_aluno')">Aluno</a></li>
+		  	<li><a id="c_professor" onclick="troca_tela_secretaria('c_professor')">Professor</a></li>
+		  	<li><a id="c_turma" onclick="troca_tela_secretaria('c_turma')">Turma</a></li>
 		  </div>
 
+		  <li><a id="menu_consulta" onclick='troca_tela_secretaria("consulta")'>Consulta</a></li>
+		  <div id="submenu_consulta" class="esconder">
+		  	<li><a id="co_aluno" onclick="troca_tela_secretaria('co_aluno')">Aluno</a></li>
+		  	<li><a id="co_professor" onclick="troca_tela_secretaria('co_professor')">Professor</a></li>
+		  	<li><a id="co_turma" onclick="troca_tela_secretaria('co_turma')">Turma</a></li>
+		  </div>
+		  
 		  <li><a>Sair</a></li>
 		</ul>
 

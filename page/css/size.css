@@ -21,6 +21,10 @@ ul.sidenav {
     height: 100%;
 }
 
+ul.sidenav div li a {
+    padding-left: 10%;
+}
+
 ul.sidenav li a {
     padding: 8px 16px;
 }
