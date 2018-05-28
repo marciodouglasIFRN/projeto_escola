@@ -53,5 +53,7 @@ function troca_tela_professor(tela) {
 	}
 }
 
-
+function sair() {
+	window.location.replace("../login.html");
+}
 
